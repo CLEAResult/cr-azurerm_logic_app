@@ -7,6 +7,7 @@ resource "azurerm_logic_app_workflow" "logicapp" {
   lifecycle {
     ignore_changes = [
       tags,
+      parameters
     ]
   }
 
